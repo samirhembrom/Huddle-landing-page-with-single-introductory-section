@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; 
+font-family: 'Poppins', sans-serif;*/
+
+:root{
+    --violet:  #674baf;
+    --magenta:  #e882e8;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    color:#fff;
+}
+
+body{
+    margin: 0;
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color:var(--violet);
+    
+}
+@media(min-width:376px){
+    body{
+        background-image: url("images/bg-desktop.svg");
+    }
+}
+
+/* Typography */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 2em auto .5em;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+
+@media(min-width:500px){
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.125rem;
+    }
+}
+
+
+/* Layout */
+
+.container{
+    width: 80%;
+    margin: 2em auto;
+}
+
+div.logo{
+    content:url("images/logo.svg"); 
+    width: 8em;
+    margin-bottom: 2em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.mockup{
+    margin-top: 3.75em;
+}
+
+/* button */
+button{
+    font-family: 'Poppins', sans-serif;
+    padding: .855em 4.5em;
+    background: #fff;
+    color:var(--violet);
+    border: none;
+    border-radius: 25px;
+    margin-top: .655em;
+}
+button:hover{
+    background: var(--magenta);
+    color: #fff;
+}
+/* Media Icons */
+.media-icons{
+    margin-top: 3em;
+}
+.fab{
+    width: 33px;
+    height: 32px;
+}
+.circle{
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 5px;
+    
+}
+
+.info{
+    text-align: center;
+}
+.media-icons{
+    text-align: center;
+}
+
+@media(min-width:500px){
+    .container{
+    width: 90%;
+    }
+    div.logo{
+        width: 13.555em;
+    }
+    .container-flex{
+        display: flex;
+        margin-top: 3em;
+    }
+    .mockup{
+        width: 60%;
+    }
+    .info{
+        width: 40%;
+        text-align: left;
+    }
+    .media-icons{
+        text-align: right;
+    }
+}
